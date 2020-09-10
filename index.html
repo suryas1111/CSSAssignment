@@ -8,59 +8,64 @@
 </head>
 <body>
     <div class="main">
-        <h2 class="fontColor">YOUR SHOPPING BAG</h2>
-        <table>
-            <tr class="highlight downborder">
-              <th class="fontColor">3 ITEMS</th>
-              <th class="fontColor">SIZE</th>
-              <th class="fontColor">QTY</th>
-              <th class="fontColor">PRICE</th>
-            </tr>
-            <tr class="highlight">
-                <td class="align">
-                    <img src="./assets/T1.jpg">
-                    <span>
-                        <h5 class="disablemarginbottom">SOLID GREEN COTTON SHIRT</h5>
-                        <p class="disablemargintop disablemarginbottom fontColor">Style #:MS13KT1906</p>
-                        <p class="disablemargintop disablemarginbottom fontColor">Colour:Blue</p>
-                    </span>                    
-                </td>
-                <td>S</td>
-                <td><input class="inputtext" type="text" size="1" value="1" name="QTY"></td>
-                <td><sup>$</sup>11.00</td>
-            </tr>
-            <tr class="highlight">
-                <td class="align">
-                    <img src="./assets/T2.jpg">
-                    <span>
-                        <h5 class="disablemarginbottom">PINK RAINBOW PRINT GIRLS TEE</h5>
-                        <p class="disablemargintop disablemarginbottom fontColor">Style #:MS13KT1906</p>
-                        <p class="disablemargintop disablemarginbottom fontColor">Colour:Gray</p>
-                    </span>                   
-                </td>
-                <td>S</td>
-                <td><input class="inputtext" type="text" size="1" value="1" name="QTY"></td>
-                <td><sup>$</sup>17.00</td>
-            </tr>
-            <tr class="highlight downborder">
-                <td class="align">
-                    <img src="./assets/T3.jpg">
-                    <span>
-                        <h5 class="disablemarginbottom">BLUE FLOWER PATTERN SHIRT</h5>
-                        <p class="disablemargintop disablemarginbottom fontColor">Style #:MS13KT1906</p>
-                        <p class="disablemargintop disablemarginbottom fontColor">Colour:Blue</p>
-                    </span>                   
-                </td>
-                <td>S</td>
-                <td><input class="inputtext" type="text" size="1" value="1" name="QTY"></td>
-                <td>
+        <h2 class="inputtext fontColor">YOUR SHOPPING BAG</h2>
+        <table class="downborder">
+            <thead>
+                <tr class="highlight downborder">
+                    <th class="fontColor">3 ITEMS</th>
+                    <th class="fontColor">SIZE</th>
+                    <th class="fontColor">QTY</th>
+                    <th class="fontColor">PRICE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="highlight">
+                    <td class="align">
+                        <img src="./assets/T1.jpg">
+                        <span>
+                            <h5 class="disablemarginbottom">SOLID GREEN COTTON SHIRT</h5>
+                            <p class="disablemargintop disablemarginbottom fontColor">Style #:MS13KT1906</p>
+                            <p class="disablemargintop disablemarginbottom fontColor">Colour:Blue</p>
+                        </span>                    
+                    </td>
+                    <td class="frst"><span>S</span></td>
+                    <td><input class="inputtext" type="text" size="1" value="1" name="QTY"></td>
+                    <td><sup>$</sup>11.00</td>
+                </tr>
+                <tr class="highlight">                    
+                    <td class="align">
+                        <img src="./assets/T2.jpg">
+                        <span>
+                            <h5 class="disablemarginbottom">PINK RAINBOW PRINT GIRLS TEE</h5>
+                            <p class="disablemargintop disablemarginbottom fontColor">Style #:MS13KT1906</p>
+                            <p class="disablemargintop disablemarginbottom fontColor">Colour:Gray</p>
+                        </span>                   
+                    </td>          
+                    <td class="frst"><span>S</span></td>
+                    <td><input class="inputtext" type="text" size="1" value="1" name="QTY"></td>
+                    <td><sup>$</sup>17.00</td>                                     
+                </tr>
+                <tr class="highlight downborder">
+                    <td class="align">
+                        <img src="./assets/T3.jpg">
+                        <span>
+                            <h5 class="disablemarginbottom">BLUE FLOWER PATTERN SHIRT</h5>
+                            <p class="disablemargintop disablemarginbottom fontColor">Style #:MS13KT1906</p>
+                            <p class="disablemargintop disablemarginbottom fontColor">Colour:Blue</p>
+                        </span>                   
+                    </td>
+                    <td class="frst"><span>S</span></td>
+                    <td><input class="inputtext" type="text" size="1" value="1" name="QTY"></td>
+                    <td>
                     <span>
                         <sup>$</sup><del class="font-weight-light">21.00</del>
                         <br>
                         <sup>$</sup>09.00
                     </span>  
-            </td>
-            </tr>
+                </td>
+                </tr>
+            </tbody>
+            
         </table>
 
         <section>
@@ -84,7 +89,7 @@
                 <div class="promotext">
                     <span class="fontColor">SUBTOTAL</span>
                     <span class="right">
-                        <p class="disablemarginbottom disablemargintop"><sup>$</sup>17.00</p>
+                        <p class="disablemarginbottom disablemargintop"><sup>$</sup>37.00</p>
                     </span>
                 </div>  
                 <br>
@@ -120,14 +125,17 @@
                     </span>                                     
                 </div> 
                 <div class="main toend">
-                    <div>
+                    <div class="responsive">
                         <span class="line">Continue Shopping</span>
                         <button class="button button2">CHECKOUT</button>
                     </div>
-                    <div>
-                        <img src="./assets/lock.jpg">
-                        <span class="fontColor">Secure checkout.Shopping is always safe and secure.</span>
+                    <div class="responsive">
+                        <img class="line" src="./assets/lock.jpg">
+                        <span class="fontColor inputtext">Secure checkout.Shopping is always safe and secure.</span>
                     </div>  
+                </div>
+                <div class="noshow fontColor">
+                    <p><a class="line">SIGN IN</a> to save your cart and have access to mobile,tablet,desktop.</p>
                 </div>
                              
             </article>

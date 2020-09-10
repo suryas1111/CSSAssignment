@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 
-h2{
+.inputtext{
   text-align: center;
 }
 
@@ -41,17 +41,18 @@ table, th, td {
     text-align: left;
   }
 
-  tr.highlight th, td {
+  .highlight th, td {
       padding-top: 15px; 
       padding-bottom:15px
     }
   
 .align{
     display: flex;
+    font-size: 1rem;
 }
 
 .small {
-    font-size:xx-small
+    font-size:xx-small;
 }
 
 .disablemarginbottom{
@@ -96,8 +97,13 @@ article {
     clear: both;
   }
 
+  
   .fontColor{
     color: slategrey;
+  }
+
+  .noshow{
+    display: none;
   }
 
   .promobutton{
@@ -129,3 +135,96 @@ article {
     align-items: flex-end;
   }
 
+  @media screen and (max-width: 540px) {
+    table, tbody, thead, tbody, th, td, tr {
+      display: block;
+      float:left;/* ie9 fix */
+      width:100%;
+      clear:both;
+    }
+    thead {
+     display: none
+    }
+
+    .magic{
+      position: absolute;
+    }
+
+    td{
+      font-size: 0.7rem;
+      padding-top: 0.3em;
+      padding-bottom: 0;
+    }
+
+    .frst{
+    top: 9rem;
+    left: 10rem;
+    }
+
+    h2{
+      border-bottom: 4px solid #dddddd;
+    }
+
+    .scnd{
+      top: 10.1rem;
+      left: 10rem;
+    }
+
+    .thrd{
+      top: 11.8rem;
+    left: 10rem;
+    }
+
+    .align{      
+      font-size: 0.7rem;
+    }
+
+    nav{
+      display: none;
+    }
+
+    article {      
+      width: 75%;
+      padding: 0;
+      margin: auto;
+      float: none;
+    }
+
+    .upborder{
+      border-bottom: 1px solid #dddddd;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 2vh;
+    }
+    .downborder{
+      border-bottom: 1px solid #dddddd;
+    }
+
+
+
+    .responsive{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .line{
+      text-decoration-line: underline;
+      order:2;
+      margin-bottom: 6px;
+    }
+
+  .toend{
+    align-items: center;
+    border-bottom: 1px solid #dddddd;    
+  }
+
+  .noshow{
+    display: block;
+  }
+
+    .right{
+      padding: 2px;
+    }
+  }
