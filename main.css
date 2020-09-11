@@ -23,6 +23,10 @@ table, th, td {
       border-top:1px solid #dddddd;
   }  
 
+  .reduceWidth{
+    width: 1em;
+  }
+
   tr,.borderthin{
     border-bottom: 1px solid #dddddd;
   }
@@ -43,7 +47,7 @@ table, th, td {
 
   .highlight th, td {
       padding-top: 15px; 
-      padding-bottom:15px
+      padding-bottom:10px;
     }
   
 .align{
@@ -63,13 +67,17 @@ table, th, td {
     margin-top: 0;
 }
 
+.paddingTop{
+  padding-top: 4.3rem;
+}
+
+
 nav {
     float: left;
     width: 30%;
     padding: 20px;
   }
   
-  /* Style the list inside the menu */
   nav ul {
     list-style-type: none;
     padding: 0;
@@ -98,6 +106,8 @@ article {
   }
 
   
+
+  
   .fontColor{
     color: slategrey;
   }
@@ -116,7 +126,7 @@ article {
   .promotext{
     padding:4px;
   }
-
+  
   .button {
     border: none;
     color: white;
@@ -135,47 +145,44 @@ article {
     align-items: flex-end;
   }
 
+  .paddingRight{
+    padding-right: 10px;
+  }
+
   @media screen and (max-width: 540px) {
-    table, tbody, thead, tbody, th, td, tr {
-      display: block;
-      float:left;/* ie9 fix */
-      width:100%;
-      clear:both;
-    }
-    thead {
+
+     thead {
      display: none
     }
 
-    .magic{
-      position: absolute;
+    tr{
+      height: fit-content;
     }
 
-    td{
+    table td{
       font-size: 0.7rem;
-      padding-top: 0.3em;
-      padding-bottom: 0;
-    }
-
-    .frst{
-    top: 9rem;
-    left: 10rem;
+      padding-top: 2.5em;
+      padding-bottom: 6vw;
+      
     }
 
     h2{
       border-bottom: 4px solid #dddddd;
     }
 
-    .scnd{
-      top: 10.1rem;
-      left: 10rem;
+    .width{
+      width: 50%;
     }
 
-    .thrd{
-      top: 11.8rem;
-    left: 10rem;
+    .setdesc{
+      width: auto;
+      clear: right;
     }
 
-    .align{      
+   
+
+    .align{ 
+      display: block;     
       font-size: 0.7rem;
     }
 
@@ -190,17 +197,33 @@ article {
       float: none;
     }
 
+    .promotext{
+      padding: 4px;
+      margin: 1px;
+      margin-right: 3px;
+    }
+
     .upborder{
       border-bottom: 1px solid #dddddd;
       display: flex;
       flex-direction: column;
       text-align: center;
-      padding: 2vh;
+      padding: 3vh;
     }
     .downborder{
       border-bottom: 1px solid #dddddd;
     }
 
+    .hide{
+      display: none;
+    }
+
+    .setbutton{
+      position: absolute;
+      padding-bottom: 0;
+      padding-top: 0;
+      left: 20vw;
+    }
 
 
     .responsive{
@@ -223,6 +246,8 @@ article {
   .noshow{
     display: block;
   }
+
+  
 
     .right{
       padding: 2px;
